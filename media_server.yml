@@ -60,6 +60,7 @@ services:
     volumes:
       - /media/pi/Seagate_HDD/home_server/media_server/configs/sonarr_config:/config
       #- /path/to/tvseries:/tv #optional
+      - /media/pi/Seagate_HDD/home_server/media_server/media/Videos:/videos
       - /media/pi/Seagate_HDD/home_server/media_server/downloads:/downloads #Downloads
     ports:
       - 8989:8989
@@ -75,6 +76,7 @@ services:
     volumes:
       - /media/pi/Seagate_HDD/home_server/media_server/configs/radarr_config:/config
       #- /path/to/movies:/movies #optional
+      - /media/pi/Seagate_HDD/home_server/media_server/media/Videos:/videos
       - /media/pi/Seagate_HDD/home_server/media_server/downloads:/downloads #Downloads
     ports:
       - 7878:7878
