@@ -18,6 +18,7 @@ nordvpn whitelist add subnet 192.168.0.1/24 # Router IP is 192.168.0.1
 nordvpn connect
 
 ### Media Server - setup done with docker compose file ###
+docker compose -f media_server.yml up
 #QBittorrent
 #Jellyfin
 #Prowlarr
